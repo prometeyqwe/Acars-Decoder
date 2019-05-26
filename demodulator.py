@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# import matplotlib.pyplot as plt
 import numpy as np
 import wave
 
@@ -18,13 +17,6 @@ class Demodulator:
         self.channel = []
         self.results = [1, 0, 1, 0]
         self.models = [sin_24_1, sin_24_0, sin_12_1, sin_12_0]
-
-        # plt.plot(sin_24_1)
-        # plt.plot(sin_24_0)
-        # plt.plot(sin_12_1)
-        # plt.plot(sin_12_0)
-        #
-        # plt.show()
 
     @staticmethod
     def search_max(a):
